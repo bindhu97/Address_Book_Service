@@ -22,3 +22,7 @@ insert into Address_Book values
 --UC4 Edit Person Details using Name
 
 update Address_Book set EMailId = 'Adiga12@gmail.com' where LastName = 'Adiga'
+
+--UC5 Delete record using Name
+
+delete from Address_Book where FirstName = 'Sumit'
