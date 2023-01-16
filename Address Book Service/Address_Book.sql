@@ -26,3 +26,7 @@ update Address_Book set EMailId = 'Adiga12@gmail.com' where LastName = 'Adiga'
 --UC5 Delete record using Name
 
 delete from Address_Book where FirstName = 'Sumit'
+
+--UC6 Revtive person details using state or city name 
+
+select * from Address_Book where State = 'Karnataka'
