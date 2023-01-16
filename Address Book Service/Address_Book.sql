@@ -18,3 +18,7 @@ insert into Address_Book values
 ('Sumit', 'Rao', 'Budhera', 'Gurgao', 'Haryana', 234123, 6543212345, 'sumit65@gmail.com'),
 ('Mansi', 'Adiga', 'Dasanpura', 'Trivendrum', 'Kerala', 211011, 9878987654, 'Mansi@gmail.com'),
 ('Anamika', 'Rathod', 'Samalkha', 'Panipat', 'Haryana', 212234, 9753124680, 'anamika@gmail.com')
+
+--UC4 Edit Person Details using Name
+
+update Address_Book set EMailId = 'Adiga12@gmail.com' where LastName = 'Adiga'
