@@ -49,3 +49,10 @@ update Address_Book set type = 'Friend' where FirstName='Bindhu'
 update Address_Book set type = 'Profession' where FirstName='Anamika'
 
 select * from Address_Book;
+
+--UC10 Ability to get number of contact persons i.e. count by type
+
+select Count(FirstName) as type from Address_Book where FirstName = 'Mansi' or FirstName = 'Anamika' or type = 'Profession'
+select Count(FirstName) as type from Address_Book where FirstName = 'Parnika' or FirstName = 'Bindhu' or type = 'Friend'
+select Count(FirstName) as type from Address_Book where FirstName = 'Sunil' or type = 'Family'
+
