@@ -34,3 +34,7 @@ select * from Address_Book where State = 'Karnataka'
 --UC7 Size of Address Book
 
 select Count(*) as Size_Of_Address_Book from Address_Book
+
+--UC8 retrive data 
+
+select * from Address_Book where state = 'Karnataka' Order By FirstName
