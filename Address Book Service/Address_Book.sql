@@ -38,3 +38,14 @@ select Count(*) as Size_Of_Address_Book from Address_Book
 --UC8 retrive data 
 
 select * from Address_Book where state = 'Karnataka' Order By FirstName
+
+--UC9 Ability to identify each Address Book with name and Type
+
+alter table Address_Book add type varchar(15)
+update Address_Book set type = 'Profession' where FirstName='Mansi'
+update Address_Book set type = 'Friend' where FirstName='Parnika'
+update Address_Book set type = 'Family' where FirstName='Sunil'
+update Address_Book set type = 'Friend' where FirstName='Bindhu'
+update Address_Book set type = 'Profession' where FirstName='Anamika'
+
+select * from Address_Book;
