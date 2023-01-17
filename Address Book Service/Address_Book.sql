@@ -56,3 +56,8 @@ select Count(FirstName) as type from Address_Book where FirstName = 'Mansi' or F
 select Count(FirstName) as type from Address_Book where FirstName = 'Parnika' or FirstName = 'Bindhu' or type = 'Friend'
 select Count(FirstName) as type from Address_Book where FirstName = 'Sunil' or type = 'Family'
 
+--UC11 Ability to add person to both Friend and Family
+
+INSERT INTO Address_Book(FirstName,LastName,Address,City,State,ZipCode,PhoneNumber,EMailId,type) VALUES ('Nitin','Rathod','Navi','Mumbai','Maharashtra',400011,'9632105478','nint@yahoo.com','Family');
+INSERT INTO Address_Book(FirstName,LastName,Address,City,State,ZipCode,PhoneNumber,EMailId,type) VALUES ('Megha','Shree','VijayNagar','Bangalore','Karnataka',230011,'9872105478','meg@yahoo.com','Friend');
+
